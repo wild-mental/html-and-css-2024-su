@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼 양식 연습</title>
+</head>
+<body>
+
+<form action="https://search.naver.com/search.naver">
+  * 이름, 검색어 등 : <input type="text" value="텍스트 입력을 받는 인풋창입니다."> <br>
+  * 비밀번호 : <input type="password" placeholder="안전한 패스워드를 입력하세요"> <br>
+  * 이메일 입력 : <input type="email" placeholder="이메일 형식을 입력하세요"> <br>
+
+  <h4>선택 입력용 옵션</h4>
+  <input type="checkbox" name="game" value="pokemon"> 포켓몬
+  <input type="checkbox" name="game" value="palworld"> 팰월드
+  <input type="checkbox" name="game" value="battleg"> 배틀그라운드
+  <input type="checkbox" name="game" value="animalforest"> 동물의숲
+
+  <h4>단일 선택 입력용 옵션</h4>
+  <input type="radio" name="exercise" value="fitness"> 헬스
+  <input type="radio" name="exercise" value="swim"> 수영
+  <input type="radio" name="exercise" value="running"> 달리기
+  <input type="radio" name="exercise" value="breathing"> 호흡
+
+  <h4>주문 수량 선택</h4>
+  수량을 입력하세요 : <input type="number" min="1" max="999" value="5"> <br>
+  수량을 입력하세요2 : <input type="range" min="100" max="5000" value="120"> <br>
+
+  <h4>파일 업로드</h4>
+  업로드할 파일 선택 : <input type="file" accept="image/*"> <br>
+
+  <h4>드롭다운 선택 옵션 폼</h4>
+  <label for="hobby">hobbyform</label>
+  <select name="hobby" id="hobby">
+    <option value="travel">여행</option>
+    <option value="game">게임</option>
+    <option value="movie">영화</option>
+    <option value="golf">골프</option>
+    <option value="music">음악</option>
+  </select>
+
+  <input type="hidden" name="query" value="모르겠지 아마? 모를거야? 이런 것이 제출되는지 모를거야...!">
+  <br>
+  <button>제출버튼</button>
+  <button type="reset">리셋버튼 (입력양식을 비웁니다)</button>
+
+
+
+<!--  <input type="button" value="제출버튼">-->
+
+
+</form>
+
+</body>
+</html>
