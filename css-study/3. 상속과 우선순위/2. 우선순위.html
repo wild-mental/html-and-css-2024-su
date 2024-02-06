@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div {
+      /* 1점 */
+      color: red;
+    }
+    body>div {
+      /* 2점 */
+      color: green;
+    }
+    .class2, .class3 {
+      /* 10점 */
+      color: blue;
+    }
+    div.class2 {
+      /* 11점 */
+      color: red;
+    }
+    #id3, #id4 {
+      /* 100점 */
+      color: yellow;
+    }
+    div#id3 {
+      /* 101점 */
+      color: blue;
+    }
+    #id3 {
+      /* 100점 (1000점 = !important) */
+      color: skyblue !important;
+    }
+    #id4 {
+      color: yellow !important;
+    }
+    /* 동점 처리는 뒤에 나온 것으로 앞에 나온 것을 덮어쓴다 */
+    #id5 {
+      color: skyblue;
+    }
+    #id5 {
+      color: darkslategrey;
+    }
+    #id5 {
+      color: violet;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="id1" class="class1">1 번째 항목</div>
+  <div id="id2" class="class2">2 번째 항목</div>
+  <div id="id3" class="class3">3 번째 항목</div>
+  <!-- 1000점 -->
+  <div style="color: green !important;" id="id4" class="class4">4 번째 항목</div>
+  <div id="id5" class="class5">5 번째 항목</div>
+  <div id="id6" class="class6">6 번째 항목</div>
+  <div id="id7" class="class7">7 번째 항목</div>
+  <div id="id8" class="class8">8 번째 항목</div>
+</body>
+</html>

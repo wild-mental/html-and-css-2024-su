@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /* 일치 선택자 */
+    #main_title.darkblue {
+      color: darkblue;
+    }
+    #main_title.darkgray {
+      color: darkgray;
+    }
+    .third_item {
+      text-decoration: underline;
+    }
+    .important_item {
+      font-style: italic;
+    }
+    .third_item.important_item {
+      color: red;
+    }
+    .important_item[special=true] {
+      background: aqua;
+    }
+
+  </style>
+</head>
+<body>
+
+<!--  <h1 id="main_title" class="darkblue title">메인 타이틀입니다.</h1>-->
+  <h1 id="main_title" class="darkgray title">메인 타이틀입니다.</h1>
+  <div>
+    <ol>
+      <li id="6">1번째 아이템입니다</li>
+      <li id="7" class="important_item">2번째 아이템입니다</li>
+      <li id="8" class="third_item important_item">3번째 아이템입니다</li>
+      <li id="9" class="important_item" special="true">4번째 아이템입니다</li>
+      <li id="10" special="true">5번째 아이템입니다</li>
+    </ol>
+
+    <ul>
+      <li id="1">1번째 아이템입니다</li>
+      <li id="2" class="important_item">2번째 아이템입니다</li>
+      <li id="3" class="third_item">3번째 아이템입니다</li>
+      <li id="4">4번째 아이템입니다</li>
+      <li id="5">5번째 아이템입니다</li>
+    </ul>
+  </div>
+
+</body>
+</html>

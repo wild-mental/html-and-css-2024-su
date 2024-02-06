@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상속 예제</title>
+    <style>
+        body {
+            font-family: '궁서체', cursive;
+        }
+        .eco {
+            width: 400px;
+            height: 500px;
+            border: 3px solid blue;
+            color: blue;
+        }
+        .animal {
+            width: 200px;
+            height: 300px;
+            background: darkslategrey;
+        }
+        .plant {
+            width: 200px;
+            height: 100px;
+            font-family: '돋움체', "Courier New";
+            background: green;
+            color: lightcoral;
+        }
+        .plant div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="eco">
+    <div class="animal"></div>
+    <div class="plant">
+        <div>소나무</div>
+        <div>장미</div>
+        <div>민들레</div>
+    </div>
+</div>
+
+</body>
+</html>

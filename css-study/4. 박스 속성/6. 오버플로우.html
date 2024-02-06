@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 250px;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        .box {
+            background: red;
+            border: 1px solid black;
+            width: 250px;
+            height: 150px;
+            margin: 10px;
+        }
+        .img-box {
+            margin-top: 20px;
+            width: 300px;
+            height: 300px;
+
+            /* 사진 표현에 적절한 오버플로우 및 콘텐츠 정렬 */
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</div>
+
+<div class="img-box">
+    <img src="https://wildmental.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F1eaedece-cc5e-4be8-bef8-1da4334ab8fb%2F255d105b-089d-42b1-9cb5-d17e752e46a0%2Fsoftware-engineer-job-skills-1.jpg?table=block&id=3bc21e9a-279c-4fbd-877e-32e68868e866&spaceId=1eaedece-cc5e-4be8-bef8-1da4334ab8fb&width=1750&userId=&cache=v2"
+         alt="강의 교안 페이지 메인 이미지">
+</div>
+
+</body>
+</html>

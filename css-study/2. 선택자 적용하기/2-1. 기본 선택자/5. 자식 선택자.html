@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자식 선택자</title>
+  <style>
+    div>* {
+      font-family: '돋움체', "Courier New";
+    }
+    nav>* {
+      font-family: '궁서체', cursive;
+    }
+
+    ul>li {
+      text-decoration: underline;
+    }
+    ol>li {
+      color: midnightblue;
+    }
+
+  </style>
+
+</head>
+<body>
+<div>
+  <ul>
+    <span>순서 없는 리스트 내의 타 항목</span>
+    <li>순서 없는 리스트 항목1</li>
+    <li>순서 없는 리스트 항목2</li>
+    <li>순서 없는 리스트 항목3</li>
+    <li>순서 없는 리스트 항목4</li>
+  </ul>
+</div>
+
+<nav>
+  <ol>
+    <li>순서리스트 항목1</li>
+    <li>순서리스트 항목2</li>
+    <li>순서리스트 항목3</li>
+    <li>순서리스트 항목4</li>
+  </ol>
+</nav>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    [checkbox-title=games] {
+      background: yellow;
+    }
+    input[type=text] {
+      color: lightcoral;
+    }
+    input[type=number] {
+      font-size: 20px;
+    }
+    button[type=submit] {
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+
+  <h4 checkbox-title="games">선택 입력용 옵션</h4>
+  <input type="text" value="포켓몬 게임 버전">
+  <hr>
+  <input type="checkbox" name="game" value="pokemon"> 포켓몬
+  <input type="checkbox" name="game" value="palworld"> 팰월드
+  <input type="checkbox" name="game" value="battleg"> 배틀그라운드
+  <input type="checkbox" name="game" value="animalforest"> 동물의숲
+
+  <h4>단일 선택 입력용 옵션</h4>
+  <input type="radio" name="exercise" value="fitness"> 헬스
+  <input type="radio" name="exercise" value="swim"> 수영
+  <input type="radio" name="exercise" value="running"> 달리기
+  <input type="radio" name="exercise" value="breathing"> 호흡
+
+  <h4>주문 수량 선택</h4>
+  수량을 입력하세요 : <input type="number" min="1" max="999" value="5"> <br>
+  수량을 입력하세요2 : <input type="range" min="100" max="5000" value="120"> <br>
+
+  <input type="hidden" name="query" value="모르겠지 아마? 모를거야? 이런 것이 제출되는지 모를거야...!">
+  <br>
+  <button type="submit">제출버튼</button>
+  <button type="reset">리셋버튼 (입력양식을 비웁니다)</button>
+
+
+</body>
+</html>

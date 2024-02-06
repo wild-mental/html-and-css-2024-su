@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>여백 예제</title>
+    <style>
+        .container {
+            background: coral;
+            margin: 10px;
+            /*padding-bottom: 40px;*/
+
+            /* 하나일 때 : 전체 패딩*/
+            padding: 20px;
+            /* 두개일 때 : [상하] [좌우] 패딩 */
+            padding: 20px 10px;
+            /* 세개일 때 : [상] [좌우] [하] 패딩 */
+            padding: 20px 10px 40px;
+            /* 네개일 때 : [상] [우] [하] [좌] 패딩 */
+            padding: 20px 10px 40px 50px;
+        }
+        .box {
+            background: blue;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">박스 1</div>
+    <div class="box">박스 2</div>
+</div>
+
+</body>
+</html>

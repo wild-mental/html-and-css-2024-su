@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>전후 선택자</title>
+</head>
+<style>
+    li:nth-child(3) {
+        text-decoration: underline;
+    }
+
+    /* 태그 내부가 아닌, 태그 앞뒤에
+       가상의 특정한 콘텐츠를 생성하면서
+       스타일을 적용할 수 있음 */
+    li:nth-child(3)::before {
+        content: "앞 항목입니다";
+        font-weight: bold;
+    }
+    li:nth-child(3)::after {
+        content: "뒷 항목입니다";
+        color: red;
+    }
+
+</style>
+<body>
+<ul>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+    <li>매우 많은 아이템들</li>
+</ul>
+</body>
+</html>
