@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index 예제</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid black;
+        }
+        .box1 {
+            background-color: coral;
+            z-index: 1;
+        }
+        .box2 {
+            background-color: greenyellow;
+            z-index: 2;
+            margin: 100px 100px;
+        }
+        .box3 {
+            background-color: cornflowerblue;
+            z-index: 3;
+            margin: 200px 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box box1">박스 1</div>
+    <div class="box box2">박스 2</div>
+    <div class="box box3">박스 3</div>
+</div>
+
+</body>
+</html>

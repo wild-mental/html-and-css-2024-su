@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>변환 예제</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        margin: 50px;
+
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        transition-duration: 1s;
+      }
+      .box1:hover {
+        /*transform: rotate(720deg);*/
+        /* rotate 3D: (x, y, z, 회전각도) */
+        transform: rotate3d(0, -10, 0, 60deg);
+      }
+      .box2:hover {
+        transform: translate(200px, 50px);  /* 좌우, 상하 */
+      }
+      .box3:hover {
+        transform: scale(1.5);
+      }
+      .box4:hover {
+        /*transform: skew(50deg, 0);  상하 */
+        transform: skew(0, 50deg);  /* 좌우 */
+      }
+      .box5:hover {
+        transform: rotate(720deg) translate(200px) scale(2);
+      }
+
+    </style>
+</head>
+<body>
+
+<!--  회전  -->
+<div class="box box1">1</div>
+<!--  위치 이동  -->
+<div class="box box2">2</div>
+<!--  크기 변경  -->
+<div class="box box3">3</div>
+<!--  비틀기  -->
+<div class="box box4">4</div>
+<!--  조합  -->
+<div class="box box5">5</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션 예제</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 50px;
+
+        /*transition-property: background-color, border-radius, width;*/
+        /*transition-timing-function: ease-in-out;*/
+        /*transition-duration: 0.5s, 2s, 4s;*/
+        /*transition-delay: 0s, 0.5s, 0s;*/
+
+        /* Transition Shorthand */
+        /* name(전환내용) duration timing-function delay */
+        transition: all 3s steps(6) 0s;
+      }
+      .box:hover {
+        border-radius: 50%;
+        background-color: skyblue;
+        width: 800px;
+      }
+
+    </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
