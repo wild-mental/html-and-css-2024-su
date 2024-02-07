@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배경 설정 및 패턴</title>
+    <style>
+        .box {
+            width: 350px;
+            height: 275px;
+            border: 4px dot-dash darkslategrey;
+            background-color: coral;
+            background-image: url("vasconcellos.jpg");
+            background-position: center;
+            background-size: cover;
+            /*background-size: contain;*/
+            /*background-repeat: no-repeat;*/
+        }
+
+        .box2 {
+            width: 700px;
+            height: 550px;
+            border: 4px dot-dash darkslategrey;
+        /*  background shorthand 적용  */
+        /*  repeat color image position/size  */
+            background: repeat black url("vasconcellos.jpg") center/350px 275px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--<img src="/css-study/6. 배경제어/willian-justen-de-vasconcellos&#45;&#45;bth-fBljNo-unsplash.jpg"-->
+<!--     alt="멋진 여행사진입니다. 아마도 북유럽인 것 같네요">-->
+
+<div class="box"></div>
+
+<div class="box2"></div>
+
+</body>
+</html>

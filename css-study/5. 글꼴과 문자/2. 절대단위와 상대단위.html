@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단위 다루기 연습</title>
+
+    <style>
+        #num1 {
+            font-size: 20pt;
+        }
+        #num2 {
+            font-size: 20px;
+        }
+        #num3 {
+            font-size: 10mm;
+        }
+        #num4 {
+            font-size: 1cm;
+        }
+        #num5 {
+            font-size: 0.5in;
+        }
+
+        .parent {
+            font-size: 20px;
+        }
+        #rel_num1 {
+            /* M의 크기에 따라서 폰트크기를 결정하는 체계 */
+            font-size: 1.2em;
+        }
+        #rel_num2 {
+            /* 루트 요소를 기준으로 */
+            /* M의 크기에 따라서 폰트크기를 결정하는 체계 */
+            font-size: 1.2rem;
+            /* 루트 요소 기준이기 때문에 사이즈가 안정적   */
+        }
+
+        .container {
+            background-color: skyblue;
+            width: 200px;
+            height: 500px;
+        }
+        .box {
+            /*width: 50%;*/
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            margin: 5px auto;
+        }
+
+        .box.vw {
+            width: 50vw;
+        }
+        .box.vh {
+            height: 40vh;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li id="num1">1번째 절대단위 테스트용 아이템</li>
+    <li id="num2">2번째 절대단위 테스트용 아이템</li>
+    <li id="num3">3번째 절대단위 테스트용 아이템</li>
+    <li id="num4">4번째 절대단위 테스트용 아이템</li>
+    <li id="num5">5번째 절대단위 테스트용 아이템</li>
+</ul>
+
+<div class="parent">
+    <ul>
+        <li id="rel_num1">[em] 1번째 상대단위 테스트용 아이템</li>
+        <li id="rel_num2">[rem] 2번째 상대단위 테스트용 아이템</li>
+    </ul>
+</div>
+
+<div class="container">
+    <h3>컨테이너</h3>
+    <div class="box vw">VW 테스트용</div>
+    <div class="box vh">VH 테스트용</div>
+
+</div>
+
+</body>
+</html>

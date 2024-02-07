@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구글 폰트 정렬 포매팅</title>
+    <!--    NOTO 한글, Josefin, -->
+    <!--    Nanum Brush, Dancing Script 웹폰트,-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;500;600&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;500;700&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <style>
+        /*font-family: 'Dancing Script', cursive;*/
+        /*font-family: 'Josefin Sans', sans-serif;*/
+        /*font-family: 'Nanum Brush Script', cursive;*/
+        /*font-family: 'Noto Sans KR', sans-serif;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        .letterbox {
+            background-color: skyblue;
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        h1 {
+            width: fit-content;
+            margin: 0 auto;
+        }
+        h2 {
+            /*letter-spacing: 5px;*/
+            word-spacing: 8px;
+        }
+        p {
+            text-indent: 1em;
+            /*text-align: center;*/
+            text-align: justify;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .font_sans-serif-eng {
+            font-family: 'Josefin Sans', 'Noto Sans KR', sans-serif;
+        }
+        .font_sans-serif-kor {
+            font-family: 'Noto Sans KR', 'Josefin Sans', sans-serif;
+        }
+        .font_cursive-eng {
+            font-family: 'Dancing Script', 'Nanum Brush Script', cursive;
+        }
+        .font_cursive-kor {
+            font-family: 'Nanum Brush Script', cursive;
+        }
+        .font_sans-serif-eng ~ p{
+            font-family: 'Josefin Sans', 'Noto Sans KR', sans-serif;
+        }
+        .font_sans-serif-kor ~ p {
+            font-family: 'Noto Sans KR', 'Josefin Sans', sans-serif;
+        }
+        .font_cursive-eng ~ p {
+            font-family: 'Dancing Script', 'Nanum Brush Script', cursive;
+        }
+        .font_cursive-kor ~ p {
+            font-family: 'Nanum Brush Script', cursive;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="letterbox">
+        상자 안에 들어있는 문자열이 있습니다.
+    </div>
+
+    <h1>텍스트 정렬 연습하기</h1>
+    <h2 class="font_sans-serif-eng">Sans serif 영문</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi illo, ipsum iure labore maxime minima modi molestias nam nesciunt nostrum nulla odit sequi tempore tenetur. Consequatur eos repellat repudiandae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi illo, ipsum iure labore maxime minima modi molestias nam nesciunt nostrum nulla odit sequi tempore tenetur. Consequatur eos repellat repudiandae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi illo, ipsum iure labore maxime minima modi molestias nam nesciunt nostrum nulla odit sequi tempore tenetur. Consequatur eos repellat repudiandae.
+    </p>
+    <h2 class="font_sans-serif-kor">Sans serif 한글</h2>
+    <p>
+        애플은 신제품 '비전 프로(Vision Pro)'가 가상현실 헤드셋으로 불리지 않도록 상당한 공을 들였다. 심지어 증강현실, 혼합현실 등 '현실'이라는 이름이 붙는 것도 경계했다. 하지만 업체의 이런 노력과 달리 이들 용어는 애플 비전 프로를 설명하는 데 어느 정도 유효하다. 물론 기존 헤드셋과 다른 점도 있지만 말이다.
+        원문보기:
+        https://www.itworld.co.kr/topnews/324449#csidx2d620e1edf65a93b0a890c331924225
+    </p>
+    <p>
+        애플은 신제품 '비전 프로(Vision Pro)'가 가상현실 헤드셋으로 불리지 않도록 상당한 공을 들였다. 심지어 증강현실, 혼합현실 등 '현실'이라는 이름이 붙는 것도 경계했다. 하지만 업체의 이런 노력과 달리 이들 용어는 애플 비전 프로를 설명하는 데 어느 정도 유효하다. 물론 기존 헤드셋과 다른 점도 있지만 말이다.
+        원문보기:
+        https://www.itworld.co.kr/topnews/324449#csidx2d620e1edf65a93b0a890c331924225
+    </p>
+    <p>
+        애플은 신제품 '비전 프로(Vision Pro)'가 가상현실 헤드셋으로 불리지 않도록 상당한 공을 들였다. 심지어 증강현실, 혼합현실 등 '현실'이라는 이름이 붙는 것도 경계했다. 하지만 업체의 이런 노력과 달리 이들 용어는 애플 비전 프로를 설명하는 데 어느 정도 유효하다. 물론 기존 헤드셋과 다른 점도 있지만 말이다.
+        원문보기:
+        https://www.itworld.co.kr/topnews/324449#csidx2d620e1edf65a93b0a890c331924225
+    </p>
+    <h2 class="font_cursive-eng">Cursive 영문</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aperiam consequatur doloremque, esse, est exercitationem explicabo fugit laudantium libero maxime molestiae molestias nobis, nulla quam reprehenderit ullam veniam vitae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aperiam consequatur doloremque, esse, est exercitationem explicabo fugit laudantium libero maxime molestiae molestias nobis, nulla quam reprehenderit ullam veniam vitae.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aperiam consequatur doloremque, esse, est exercitationem explicabo fugit laudantium libero maxime molestiae molestias nobis, nulla quam reprehenderit ullam veniam vitae.
+    </p>
+    <h2 class="font_cursive-kor">Cursive 한글</h2>
+    <p>
+        “직접 사용해 보니…” 애플 비전 프로의 이모저모
+        Jason Cross | Macworld
+        1일 전
+        애플 비전 프로(Apple Vision Pro)의 출시는 애플에 있어 중요한 분수령이 될 것이다. 천정부지로 치솟은 가격과 한정된 수량으로 인해 지금 당장은 아이폰만 한 영향력을 발휘하지 못하겠지만, 애플은 이 제품이 미래라는 것을 분명히 알고 있다.
+        원문보기:
+        https://www.itworld.co.kr/review/324400#csidx3dc2df28f4e879cb9388085e268c5b1
+    </p>
+    <p>
+        “직접 사용해 보니…” 애플 비전 프로의 이모저모
+        Jason Cross | Macworld
+        1일 전
+        애플 비전 프로(Apple Vision Pro)의 출시는 애플에 있어 중요한 분수령이 될 것이다. 천정부지로 치솟은 가격과 한정된 수량으로 인해 지금 당장은 아이폰만 한 영향력을 발휘하지 못하겠지만, 애플은 이 제품이 미래라는 것을 분명히 알고 있다.
+        원문보기:
+        https://www.itworld.co.kr/review/324400#csidx3dc2df28f4e879cb9388085e268c5b1
+    </p>
+</div>
+
+
+</body>
+</html>
