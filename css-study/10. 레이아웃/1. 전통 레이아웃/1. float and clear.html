@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: cornflowerblue;
+        border-radius: 5%;
+        margin: 10px;
+
+        /* 텍스트 정렬 */
+        font-size: 50px;
+        text-align: center;
+        line-height: 150px;
+
+        float: right;
+        /* float 적용으로 행 독점 효과를 없앤다. */
+      }
+
+      .box:nth-child(3n+1) {
+        /* left 정렬된 float 요소들 가운데 */
+        /* 배치 위치를 초기화 하는 의미 */
+        clear: right;
+      }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+  <div class="box">11</div>
+  <div class="box">12</div>
+</div>
+
+</body>
+</html>

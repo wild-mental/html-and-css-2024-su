@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float 박스 높이 깨짐 해결 실습</title>
+    <style>
+        .container {
+            width: 700px;
+            padding: 20px;
+            border: 4px solid black;
+            /* 솔루션 1 */
+            /*overflow: hidden;*/
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 4px solid green;
+            border-radius: 10%;
+            float: left;
+        }
+
+        /* 솔루션 1-2 */
+        /*.clearfix {*/
+        /*    overflow: hidden;*/
+        /*}*/
+
+        /* 솔루션 3 */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        ul {
+            width: 700px;
+            padding: 20px;
+            border: 4px solid blue;
+            list-style: none;
+            /* 솔루션 1 */
+            /*overflow: hidden;*/
+        }
+        li {
+            border: 4px solid cornflowerblue;
+            border-radius: 20%;
+            padding: 10px;
+            margin: 10px 10px;
+            float: left;
+        }
+
+        /* 솔루션 2 */
+        /*.virtual {*/
+        /*    clear: left;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<div class="container clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!--  솔루션 2 를 위한 빈 요소  -->
+<!--    <div class="virtual"></div>-->
+</div>
+
+<ul class="clearfix">
+    <li>아라비카</li>
+    <li>케냐</li>
+    <li>브라질</li>
+    <li>인디아</li>
+    <!--  솔루션 2 를 위한 빈 요소  -->
+<!--    <div class="virtual"></div>-->
+</ul>
+
+</body>
+</html>

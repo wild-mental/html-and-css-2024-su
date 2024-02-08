@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미디어 쿼리 조건 실습</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 미디어 쿼리 작성 */
+        /* 모바일 화면 */
+        @media screen and (max-width: 767px) {
+            .container {
+                background-color: skyblue;
+            }
+            .container::after {
+                content: "(모바일 화면)";
+            }
+        }
+        /* 태블릿 화면 */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                background-color: cornflowerblue;
+            }
+            .container::after {
+                content: "(태블릿 화면)";
+            }
+        }
+        /* PC 브라우저 화면 */
+        @media screen and (min-width: 1024px) {
+            .container {
+                background-color: slateblue;
+            }
+            .container::after {
+                content: "(브라우저 화면)";
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <h1>반응형 디자인을 간단히 테스트합니다.</h1>
+    <p>화면 크기에 따라서 배경색을 바꿉니다.</p>
+</div>
+</body>
+</html>
