@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼과 폼 실습</title>
+  <!-- CSS 적용의 단계 (1) 리셋,  (2) 외부 라이브러리 두 단계를 Bootstrap 이 해결! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+  <!-- CSS 적용의 단계 (3) 커스텀 스타일 시트만 추가하면 된다 -->
+  <link rel="stylesheet" href="app.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h5>row 요소 안에 작성한 내용은 display - grid 형태로 블록 요소로 전환됨</h5>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <h5>블록 요소에서 다시 인라인으로 변경하고자 하면 col 아래에 넣어야 함</h5>
+    <div class="col">
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-primary" disabled>Primary button</button>
+      <button type="button" class="btn btn-secondary" disabled>Button</button>
+      <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+      <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="d-grid gap-2">
+  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-primary" type="button">Button</button>
+</div>
+<hr>
+<h1 class="text-center text-primary">폼 요소 테스트</h1>
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-6">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input disabled type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <h4 id="form-title">이 입력창에는 유저의 패스워드를 입력하세요.</h4>
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input value="서버에서 받은 값" readonly aria-labelledby="form-title" type="password" class="form-control form-control-plaintext" id="exampleInputPassword1">
+        <div id="passwordHelp" class="form-text">안전한 비밀번호를 사용해 주세요.</div>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+
+  </div>
+</div>
+  <div class="row">
+    <div class="col">
+
+      <label for="exampleDataList" class="form-label">Datalist example</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="점심 식사 메뉴를 고르세요...">
+      <datalist id="datalistOptions">
+        <option value="학식 - 치즈돌솥">
+        <option value="후문 - 쇼쿠요쿠">
+        <option value="도시락">
+        <option value="굶기">
+        <option value="...">
+      </datalist>
+
+    </div>
+  </div>
+
+  <hr>
+  <div class="row">
+    <h1>입력 그룹 커스터마이징</h1>
+    <div class="col-12">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="mb-3">
+        <label for="basic-url" class="form-label">Your vanity URL</label>
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+        </div>
+        <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-text">.00</span>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="input-group mb-3">
+
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+    </div>
+    <div class="col-12">
+        <div id="serverUserFormHelp" class="form-text">서버 접속 유저 계정을 credential helper 등과 연결해서 사용할 때 주소가 완성되는 패턴을 안내해 줄 수 있다.</div>
+    </div>
+    <div class="col-12">
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

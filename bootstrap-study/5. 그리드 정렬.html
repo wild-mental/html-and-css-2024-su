@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>그리드로 만들어진 아이템을 정렬해 봅시다.</title>
+  <!-- CSS 적용의 단계 (1) 리셋,  (2) 외부 라이브러리 두 단계를 Bootstrap 이 해결! -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+  <!-- CSS 적용의 단계 (3) 커스텀 스타일 시트만 추가하면 된다 -->
+  <link rel="stylesheet" href="app.css">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <h1 class="text-center text-success">수직 정렬</h1>
+  </div>
+  <div class="row align-items-stretchs">
+    <div class="col-3 bg-success align-self-start">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, ipsum, unde! Ducimus, exercitationem,
+        sed. Deleniti error expedita, iste laboriosam, non nulla obcaecati omnis possimus quasi recusandae, repudiandae
+        tempore? Consequatur, nam!
+      </div>
+    </div>
+    <div class="col-3 bg-info">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, minus, nihil? Adipisci debitis deserunt
+        distinctio impedit itaque labore laudantium nemo officia, pariatur, perferendis repudiandae vel! Architecto
+        asperiores labore porro reiciendis?
+      </div>
+      <div>Aliquam atque autem dicta dignissimos distinctio illum ipsa magnam maxime modi natus nemo nihil optio porro,
+        provident quasi quos rem repellat ullam vero voluptate. Eius natus numquam perspiciatis tempore voluptate!
+      </div>
+    </div>
+    <div class="col-3 bg-warning">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, earum illum impedit ipsa magnam
+        molestias nemo omnis, porro quia reprehenderit, repudiandae sapiente sequi sint vero? Assumenda dolores dolorum
+        tempora.
+      </div>
+      <div>Alias corporis deleniti, dicta dolore error eum expedita fuga ipsa iusto magni, maxime, pariatur perferendis
+        provident quis quisquam quo ratione rem repellendus ut voluptatibus? Esse hic iste modi repellat tenetur!
+      </div>
+      <div>Alias corporis deleniti, dicta dolore error eum expedita fuga ipsa iusto magni, maxime, pariatur perferendis
+        provident quis quisquam quo ratione rem repellendus ut voluptatibus? Esse hic iste modi repellat tenetur!
+      </div>
+    </div>
+    <div class="col-3 bg-dark text-white align-self-center">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid consequuntur dignissimos dolor
+        esse expedita fugit ipsam iure laborum nam pariatur, porro quam qui quo reprehenderit repudiandae rerum sint
+        veniam?
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h1 class="text-center text-info">수평 정렬</h1>
+    <h4 class="text-center text-dark">가로 정렬을 위해서는 그리드 숫자상의 여백이 남아야 한다.</h4>
+  </div>
+  <div class="row border justify-content-between">
+    <div class="col-4 bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consectetur, consequuntur dicta
+      distinctio eaque fugit, impedit inventore laborum neque omnis quis, saepe similique sint ut velit? Beatae
+      molestias odit perspiciatis.
+    </div>
+    <div class="col-4 bg-danger">Ab amet consectetur, culpa enim in labore libero minima molestiae necessitatibus nobis porro quae quam qui quia
+      ratione tenetur veritatis! Consequatur dicta eaque itaque minima praesentium quae tempora tempore vel.
+    </div>
+  </div>
+  <div class="row">
+    <h1 class="text-center text-primary-emphasis">여백! : 도랑(gutter) 내기</h1>
+    <h4 class="text-center text-dark"></h4>
+  </div>
+  <div class="row gx-1">
+    <div class="col-3 text-white align-self-center g-1">
+      <div class="bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid consequuntur dignissimos dolor
+        esse expedita fugit ipsam iure laborum nam pariatur, porro quam qui quo reprehenderit repudiandae rerum sint
+        veniam?
+      </div>
+    </div>
+    <div class="col-3 text-white align-self-center g-1">
+      <div class="bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid consequuntur dignissimos dolor
+      esse expedita fugit ipsam iure laborum nam pariatur, porro quam qui quo reprehenderit repudiandae rerum sint
+      veniam?
+    </div>
+  </div>
+    <div class="col-3 text-white align-self-center g-1">
+      <div class="bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid consequuntur dignissimos dolor
+      esse expedita fugit ipsam iure laborum nam pariatur, porro quam qui quo reprehenderit repudiandae rerum sint
+      veniam?
+    </div>
+  </div>
+    <div class="col-3 text-white align-self-center g-1">
+      <div class="bg-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid consequuntur dignissimos dolor
+      esse expedita fugit ipsam iure laborum nam pariatur, porro quam qui quo reprehenderit repudiandae rerum sint
+      veniam?
+    </div>
+  </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>

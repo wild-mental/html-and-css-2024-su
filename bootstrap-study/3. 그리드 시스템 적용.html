@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS 적용의 단계 (1) 리셋,  (2) 외부 라이브러리 두 단계를 Bootstrap 이 해결! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
+    <!-- CSS 적용의 단계 (3) 커스텀 스타일 시트만 추가하면 된다 -->
+    <link rel="stylesheet" href="app.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h1 class="text-center text-primary">그리드 시스템 실습하기</h1>
+    </div>
+    <div class="row">
+        <div class="col bg-success">
+            Column
+        </div>
+        <div class="col bg-success">
+            Column
+        </div>
+        <div class="col bg-success">
+            Column
+        </div>
+    </div>
+    <div class="row">
+        <!--    gutter 와 margin 엿보기    -->
+        <div class="col bg-success g-1 m-1">
+            Column
+        </div>
+        <div class="col bg-success g-1 m-1">
+            Column
+        </div>
+        <div class="col bg-success g-1 m-1">
+            Column
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="w-100"></div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+        <div class="col bg-warning">자동 행 구분 컬럼</div>
+    </div>
+    <div class="row">
+        <div class="col bg-info">1</div>
+        <div class="col bg-info">2</div>
+        <div class="col bg-info">3</div>
+        <div class="col bg-info">4</div>
+        <div class="col bg-info">5</div>
+        <div class="col bg-info">6</div>
+        <div class="col bg-info">7</div>
+        <div class="col bg-info">8</div>
+        <div class="col bg-info">9</div>
+        <div class="col bg-info">10</div>
+        <div class="col bg-info">11</div>
+        <div class="col bg-info">12</div>
+        <div class="col bg-info">13</div>
+        <div class="col bg-info">14</div>
+        <div class="col bg-info">15</div>
+        <div class="col bg-info">16</div>
+        <div class="col bg-info">17</div>
+        <div class="col bg-info">18</div>
+        <div class="col bg-info">19</div>
+        <div class="col bg-info">20</div>
+        <div class="col bg-info">21</div>
+        <div class="col bg-info">22</div>
+        <div class="col bg-info">23</div>
+        <div class="col bg-info">24</div>
+        <div class="col bg-info">25</div>
+        <div class="col bg-info">26</div>
+        <div class="col bg-info">27</div>
+        <div class="col bg-info">28</div>
+        <div class="col bg-info">29</div>
+        <div class="col bg-info">30</div>
+    </div>
+    <!--  row-cols 방식은 1~6 까지만  -->
+    <div class="row row-cols-6">
+        <div class="col bg-warning">1번 </div>
+        <div class="col bg-warning">2번 </div>
+        <div class="col bg-warning">3번 </div>
+        <div class="col bg-warning">4번 </div>
+        <div class="col bg-warning">5번 </div>
+        <div class="col bg-warning">6번 </div>
+        <div class="col bg-warning">7번 </div>
+        <div class="col bg-warning">8번 </div>
+        <div class="col bg-warning">9번 </div>
+        <div class="col bg-warning">10번</div>
+        <div class="col bg-warning">11번</div>
+        <div class="col bg-warning">12번</div>
+        <div class="col bg-warning">13번</div>
+        <div class="col bg-warning">14번</div>
+        <div class="col bg-warning">15번</div>
+        <div class="col bg-warning">16번</div>
+        <div class="col bg-warning">17번</div>
+        <div class="col bg-warning">18번</div>
+        <div class="col bg-warning">19번</div>
+        <div class="col bg-warning">20번</div>
+        <div class="col bg-warning">21번</div>
+        <div class="col bg-warning">22번</div>
+        <div class="col bg-warning">23번</div>
+        <div class="col bg-warning">24번</div>
+    </div>
+
+    <div class="row">
+        <h1 class="text-success text-center">불균등 행 컬럼 만들기</h1>
+    </div>
+    <div class="row">
+        <div class="col-6 bg-danger">크기 6짜리 컬럼입니다</div>
+        <div class="col-6 bg-danger">크기 6짜리 컬럼입니다</div>
+        <div class="col-6 bg-danger">크기 6짜리 컬럼입니다</div>
+        <div class="col-6 bg-danger">크기 6짜리 컬럼입니다</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 bg-danger">크기 3짜리 컬럼입니다</div>
+        <div class="col-3 bg-danger">크기 3짜리 컬럼입니다</div>
+        <div class="col-3 bg-danger">크기 3짜리 컬럼입니다</div>
+        <div class="col-3 bg-danger">크기 3짜리 컬럼입니다</div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 bg-danger">크기 2짜리 컬럼입니다</div>
+        <div class="col-2 bg-danger">크기 2짜리 컬럼입니다</div>
+        <div class="col-2 bg-danger">크기 2짜리 컬럼입니다</div>
+        <div class="col-2 bg-danger">크기 2짜리 컬럼입니다</div>
+        <div class="col-2 bg-danger">크기 2짜리 컬럼입니다</div>
+        <div class="col-2 bg-danger">크기 2짜리 컬럼입니다</div>
+    </div>
+    <div class="row">
+        <div class="col-2 bg-info">크기 2짜리 컬럼입니다</div>
+        <div class="col-4 bg-success">크기 4짜리 컬럼입니다</div>
+        <div class="col-6 bg-warning">크기 6짜리 컬럼입니다</div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 bg-info">크기 2짜리 컬럼입니다</div>
+        <div class="col-6 bg-success">크기 6짜리 컬럼입니다</div>
+        <div class="col bg-warning">크기가 자동으로 지정되는 컬럼입니다</div>
+    </div>
+
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
